@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Restaurante Maestro</title>
+    <meta name="description" content="comida deliciosa, economico, rapido">
+    
+
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+ 
+
+
+    
+</head>
+
+<body>
+    <header role="banner" class="encabezado">
+        <div class="contenedor">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo del Sitio">
+            </a>
+            <div class="barra-encabezado">
+                <a href="tel:511 996 314698" class="telefono"><i class="fa fa-phone" aria-hidden="true"></i>511 996 314698</a>
+                <form action="">
+                    <input type="text" name="buscar" placeholder="Buscar...">
+                </form>
+                <ul class="redes-sociales">
+                    <li><a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+
+                </ul>
+            </div>
+
+        </div>
+
+
+    </header>
+    <!--Fin de header-->
+
+    <nav role="navigation" class="menu-principal">
+        <div class="contenedor">
+            <a href="#" id="menumovil">MENÚ</a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Pedidos Online</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!--fin de nav-->
+    <section class="presentacion">
+        <div class="contenedor">
+            <div class="texto-presentacion">
+                <h1>EL PLACER DE COMER</h1>
+                <h2>VEN A DISFRUTAR DE LOS MÉJORES PLATOS</h2>
+                <a href="#" class="boton-presentacion">Ver nuestros platos</a>
+            </div>
+            <div class="imagen-presentacion">
+
+                <img alt="Hamburguesa" data-src="<550:images/hamburguesa-chica.png,<750:images/hamburguesa-mediana.png,>751:images/hamburguesa.png">
+            </div>
+        </div>
+    </section>
+    <!--fin de presentacion-->
+    <section class="bienvenida">
+        <div class="contenedor">
+            <h2>BIENVENIDO AL RESTAURANTE MAESTRO</h2>
+            <p>Te invitamos a conocer más de nosotros</p>
+
+        </div>
+        <div class="bloque-bienvenidos">
+            <figure>
+                <a href="#"><img src="images/horario.png" alt="Horarios de atención">
+                    <h3>Horarios de atención</h3></a>
+                <figcation>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti neque laudantium voluptatum eius voluptatibus tenetur sed ducimus omnis modi doloribus, provident ipsum possimus incidunt alias perspiciatis dolore corporis natus facilis.</figcation>
+
+            </figure>
+            <figure>
+                <a href="#"><img src="images/nuestra-carta.png" alt="Nuestra carta">
+                    <h3>Nuestra carta</h3></a>
+                <figcation>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti neque laudantium voluptatum eius voluptatibus tenetur sed ducimus omnis modi doloribus, provident ipsum possimus incidunt alias perspiciatis dolore corporis natus facilis.</figcation>
+
+            </figure>
+            <figure>
+                <a href="#"><img src="images/nuestros-locales.png" alt="Nuestros Locales">
+                    <h3>Nuestros Locales</h3></a>
+                <figcation>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti neque laudantium voluptatum eius voluptatibus tenetur sed ducimus omnis modi doloribus, provident ipsum possimus incidunt alias perspiciatis dolore corporis natus facilis.</figcation>
+
+            </figure>
+        </div>
+
+    </section>
+    <!--fin de bienvenida-->
+
+    <main role="main">
+        <div class="contenedor">
+            <article class="quienes-somos">
+
+                <h2>¿QUIENES SOMOS?</h2>
+                <img src="images/quienes-somos.jpg" alt="¿QUIENES SOMOS?">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatem incidunt libero non voluptas maiores repellendus, placeat ut ratione! Provident odit perspiciatis maiores eaque soluta quae, beatae ex iusto at ratione! Provident odit perspiciatis maiores eaque soluta quae, beatae ex iusto at..
+                    <a href="#">VER MÁS</a>
+                </p>
+
+
+            </article>
+
+            <article class="donde-estamos">
+                <h2>AQUÍ ESTAMOS</h2>
+
+
+                <!--                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7805.567000500104!2d-76.99945960073266!3d-11.989477250227543!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1418176633995" width="100%" height="308" style="border:0"></iframe>-->
+            </article>
+
+        </div>
+
+
+    </main>
+    <!-- Fin de main -->
+
+    <!fin de nosotros-->
+    <footer role="contentinfo" class="pie-pagina">
+        <small>Copyright © 2017 Restaurante Maestro</small>
+    </footer>
+
+
+
+    <script src="js/responsive-img.min.js"></script> <!--las imagenes respnsive las hace este script sin jquery, las opciones estan en el data-src de la etiqueta img-->
+    <script src="js/jquery.min.js"></script>
+    
+    <script>
+        $(function(){
+            var boton = $('#menumovil');
+            var menu =     $('nav ul');
+
+
+            $(boton).on('click', function(e){
+                e.preventDefault();/*previene que cuando demos click funcione como un enlace recargando la pagina ya que el enlace tiene href="#" es decir previene la funcion por defecto*/
+                menu.slideToggle();/*segun veo quita el display:none que en el estilos.css en el media querie de menos 590px se le coloco al ul y lo cambia a block para que se muestre*/
+            });
+            $(window).resize(function(){
+
+                var w=$(window).width();
+                if(w > 320 && menu.is(':hidden')){/*al parecer el slideToggle le deja algun estado hidden al nav ul = menu si se clickea en el enlace #menumovil o boton aqui en js, si agrandamos la pantalla, y si el width de la ventana tiene mas de 320 pixeles, y el menu esta "hidden" que le quite el style="display:none" que el slideToggle le deja al ul cuando al hacer click de nuevo en el boton menu, y el cierra las opciones es decir, cuando clickeas y muestra al ul le coloca style="display:block" y al cerrar pues lo del none*/
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,694 @@
+/*Estilos generales*/
+
+
+/*carga de fuentes*/
+
+@font-face {
+    font-family: 'mihelvetica';
+    src: url('../fonts/HelveticaLT-Condensed-Black_gdi.eot');
+    src: url('../fonts/HelveticaLT-Condensed-Black_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaLT-Condensed-Black_gdi.woff') format('woff'), url('../fonts/HelveticaLT-Condensed-Black_gdi.ttf') format('truetype'), url('../fonts/HelveticaLT-Condensed-Black_gdi.svg#HelveticaLT-Condensed-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 100% /1.5 Arial, sans-serif;
+    margin: 0;
+}
+.contenedor {
+    display: table;
+    clear: both;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*__________________________________________________
+            ESTILOS PARA EL EMCABEZADO
+__________________________________________________*/
+
+header.encabezado {
+    padding: 1.75em 0;
+}
+.logo {
+    display: block;
+    width: 19.91304347826087%;
+    /*229-1150*/
+    text-decoration: none;
+    float: left;
+}
+.logo img {
+    max-width: 100%;
+}
+.barra-encabezado {
+    float: right;
+    margin-top: 0.9375em;
+    /*15-16*/
+}
+.barra-encabezado .telefono {
+    display: inline-block;
+    color: #a49c8f;
+    text-decoration: none;
+    font-size: 1.25em;
+    /*20/16px*/
+    cursor: default;
+}
+.barra-encabezado i {
+    font-size: 1.5em;
+    /*30/20px*/
+    padding-right: 0.15em;
+    /*5/20px*/
+    vertical-align: middle;
+}
+.barra-encabezado form {
+    display: inline-block;
+    margin: 0 2.5em;
+}
+.barra-encabezado form input {
+    border: 0.0625em solid #dedede;
+    background: #f2f2f1;
+    border-radius: 0.3125em;
+    /*5-16*/
+    padding: 0.625em;
+    /*10-16*/
+    color: #a49c8f;
+}
+.barra-encabezado form input:hover,
+.barra-encabezado form input:focus {
+    border: 0.0625em solid #ef611b;
+    background: rgba(255, 173, 23, 0.25);
+    outline: none;
+}
+.barra-encabezado .redes-sociales {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.barra-encabezado .redes-sociales li {
+    display: inline-block;
+}
+.barra-encabezado .redes-sociales li a {
+    text-decoration: none;
+    color: #fffff3;
+    display: block;
+    width: 2.25em;
+    /*36-16*/
+    height: 2.25em;
+    /*36-16*/
+    text-align: center;
+    line-height: 2.2em;
+    background: #f1af44;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.barra-encabezado .redes-sociales li a:hover {
+    background: #ef611b;
+}
+
+/*__________________________________________________
+            ESTILOS PARA EL MENÚ PRINCIPAL
+__________________________________________________*/
+
+.menu-principal {
+    background: #ee5624;
+}
+.menu-principal ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.menu-principal ul li {
+    display: table-cell;
+}
+.menu-principal ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.125em;
+    /*18-16*/
+    margin: 0;
+    padding: 1.25em 0;
+    /*20-16, */
+    border-right: 0.0625em solid #cf3705;
+    border-left: 0.0625em solid #ff7041;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.menu-principal ul li:first-child a {
+    border-left: none;
+}
+.menu-principal ul li:last-child a {
+    border-right: none;
+}
+.menu-principal ul li a:hover {
+    background: #f08866;
+}
+
+/*__________________________________________________
+    ESTILOS PARA LA SECCIÓN DE PRESENTACIÓN
+__________________________________________________*/
+
+.presentacion {
+    background: url("../images/fondo-presentacion.jpg") no-repeat center top;
+    background-size: cover;
+}
+.texto-presentacion {
+    width: 53.21739130434783%;
+    /*612-1150*/
+    float: left;
+    text-align: center;
+}
+.texto-presentacion h1 {
+    font-family: 'mihelvetica';
+    color: white;
+    font-size: 3.125em;
+    /*50-16*/
+    text-shadow: 0.02em 0.02em 0 #342e2e;
+    /*1-50*/
+    letter-spacing: 0.04em;
+    /*2-50*/
+    line-height: 1.1;
+    margin: 1.75em 0 0 0;
+    /*88-50*/
+}
+.texto-presentacion h2 {
+    font-family: 'mihelvetica';
+    color: white;
+    font-size: 1.125em;
+    /*18-16*/
+    text-shadow: 1px 1px 0 #342e2e;
+    line-height: 1.1;
+    margin: 0;
+}
+.texto-presentacion .boton-presentacion {
+    display: inline-block;
+    color: white;
+    background-color: #ee5624;
+    text-decoration: none;
+    font-size: 1.5625em;
+    /*25-16*/
+    padding: 0.72em 1.04em;
+    /*18-25, 26-25*/
+    margin-top: 0.72em;
+    /*18-25*/
+    border-radius: 0.2em;
+    /*5-16*/
+    border: 0.2em solid rgba(255, 255, 255, 0.5);
+    /*5-25*/
+    text-transform: uppercase;
+    background-clip: padding-box;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.texto-presentacion .boton-presentacion:hover {
+    border: 0.2em solid rgba(255, 255, 255, 0.8);
+    background: #b13006;
+}
+.imagen-presentacion {
+    width: 43.91304347826087%;
+    /*505-1150*/
+    float: right;
+}
+.imagen-presentacion img {
+    position: relative;
+    top: 1.25em;
+    max-width: 100%;
+    /*20-16*/
+}
+
+/*__________________________________________________
+    ESTILOS PARA LA SECCIÓN DE BIENVENIDA
+__________________________________________________*/
+
+.bienvenida h2 {
+    font-family: 'mihelvetica';
+    color: #ee5624;
+    font-size: 3.125em;
+    /*50-16*/
+    text-shadow: 0.02em 0.02em 0 #342e2e;
+    /*1-50*/
+    letter-spacing: 0.04em;
+    /*2-50*/
+    line-height: 1.1;
+    margin: 0.9375em 0 0 0;
+    /*15-16*/
+    text-align: center;
+    /*88-50*/
+}
+.bienvenida p {
+    font-family: 'mihelvetica';
+    color: #5a605b;
+    font-size: 1.875em;
+    /*20-16*/
+    text-align: center;
+    /*88-50*/
+    margin: 0.25em 0 0 0;
+}
+.bloque-bienvenidos {
+    display: table;
+    margin: 1.25em 0 0 0;
+    /*20-16*/
+}
+.bloque-bienvenidos figure {
+    display: table-cell;
+    text-align: center;
+    padding: 0.625em 1.875em;
+    /*10-16, 30-16*/
+}
+.bloque-bienvenidos figure img {
+    max-width: 100%;
+}
+.bloque-bienvenidos figure a {
+    display: block;
+    text-decoration: none;
+}
+.bloque-bienvenidos figure h3 {
+    font-family: 'mihelvetica';
+    color: #ee5624;
+    font-size: 1.875em;
+    /*30-16*/
+    margin: 0.5em 0 0.33em 0;
+    /*15-30,10-30*/
+}
+.bloque-bienvenidos figure h3:hover {
+    color: #5a605b;
+}
+
+/*__________________________________________________
+    ESTILOS PARA LA SECCIÓN DE QUIENES SOMOS
+__________________________________________________*/
+
+main {
+    background: #ee5624;
+    color: white;
+    padding-bottom: 3.125em;
+    /*50-16*/
+}
+main article.quienes-somos {
+    display: table-cell;
+    width: 50%;
+    padding: 0.625em;
+    /*10-16*/
+}
+main article.quienes-somos img {
+    float: left;
+    width: 40%;
+}
+main article.quienes-somos p {
+    float: left;
+    width: 58%;
+    margin: 0 0 0 2%;
+}
+main article.quienes-somos a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.75em;
+    /* 28-16*/
+    padding: 0.3571428571428571em 1.071428571428571em;
+    /*10 30 - 28 */
+    border: 0.25em solid rgba(255, 255, 255, 0.42);
+    /*5-20*/
+    border-radius: 0.2857142857142857em;
+    /*8-28*/
+    background-color: #ee5624;
+    background-clip: padding-box;
+    text-decoration: none;
+    margin: 0.7142857142857143em 0 0 0;
+    /*20-28*/
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+main article.quienes-somos a:hover {
+    border: 0.25em solid rgba(255, 255, 255, 0.87);
+    /*5-20*/
+    background-color: #CA3200;
+}
+main article h2 {
+    font-family: 'MiHelvetica';
+    font-size: 2.1875em;
+    /*25-16*/
+}
+main article.donde-estamos {
+    display: table-cell;
+    width: 50%;
+    padding: 0.625em;
+    /*10-16*/
+}
+main article.donde-estamos iframe {
+    height: 20.5em;
+}
+
+/*__________________________________________________
+    ESTILOS PARA EL PIE DE PAGINA
+__________________________________________________*/
+
+footer.pie-pagina {
+    background: #444444;
+    color: white;
+    text-align: center;
+    padding: 0.625em;
+    /*10-16*/
+}
+
+/*__________________________________________________
+    Ocultamos Boton movil
+__________________________________________________*/
+
+#menumovil {
+    display: none;
+}
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 1200px
+__________________________________________________*/
+
+@media screen and (max-width:1015px) {
+    .texto-presentacion h1 {
+        font-size: 2.5em;
+    }
+}
+
+/*fin de media querie*/
+
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 990px
+__________________________________________________*/
+
+@media screen and (max-width:990px) {
+    body {
+        font: 80% /1.5 Arial, sans-serif;
+    }
+    .texto-presentacion {
+        margin-top: 1.25em;
+        /*20-16*/
+    }
+    .contenedor {
+        width: 95%;
+    }
+}
+
+/*fin de media querie*/
+
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 750px
+__________________________________________________*/
+
+@media screen and (max-width:750px) {
+    .texto-presentacion h1 {
+        margin: 1.3em 0 0 0;
+    }
+    .presentacion {
+    background: url(../images/fondo-presentacion-mediano.jpg) no-repeat center top;
+    background-size: cover;
+}
+}
+
+/*fin de media querie*/
+
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 726px
+__________________________________________________*/
+
+@media screen and (max-width:726px) {
+    main article.quienes-somos {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    main article.donde-estamos {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+/*fin de media querie*/
+
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 670px
+__________________________________________________*/
+
+@media screen and (max-width:670px) {
+    body {
+        font-size: 65%;
+    }
+    .texto-presentacion h1 {
+        font-size: 3em;
+    }
+    .texto-presentacion h2 {
+        font-size: 1.5em;
+    }
+}
+
+/*fin de media querie*/
+
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 598px
+__________________________________________________*/
+
+@media screen and (max-width:600px) {
+    header.encabezado {
+        padding: 1em 0;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .barra-encabezado {
+        width: 100%;
+        text-align: center;
+    }
+    .texto-presentacion h1 {
+        font-size: 2.5em;
+    }
+    .texto-presentacion h2 {
+        font-size: 1.5em;
+    }
+}
+
+/*fin de media querie*/
+
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 590px
+__________________________________________________*/
+
+@media screen and (max-width: 590px) {
+    body {
+        font-size: 60%;
+    }
+    .contenedor {
+        width: 100%;
+    }
+    .menu-principal ul {
+        display: none;
+        background: #222222;
+    }
+    .menu-principal ul li {
+        display: block;
+        width: 100%;
+        border-top: 1px solid #696565;
+        border-bottom: 1px solid #1e1e1e;
+    }
+    .menu-principal ul li a {
+        background: #3d3c3e;
+        color: white;
+        border-radius: 0;
+        /*6px / 16px*/
+        margin: 0;
+        transition: all 0.5s ease;
+    }
+    .menu-principal ul li a:hover {
+        background: #1D1C1D;
+        border-radius: 0;
+    }
+    /*Estilos para el boton de 3 linea*/
+    .menu-principal #menumovil {
+        display: block;
+        background: #ee5624;
+        position: relative;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        line-height: 5em;
+        /*48px 9.6px*/
+    }
+    .menu-principal #menumovil:hover {
+        background: #000;
+    }
+    .menu-principal #menumovil:before {
+        content: "";
+        position: absolute;
+        right: 1.25em;
+        /*12 9.6px*/
+        top: 1.25em;
+        /*12 9.6px*/
+        width: 2.6em;
+        /*25px  9.6px*/
+        height: 2em;
+        /*20px 16px*/
+        border-top: 0.4em solid white;
+        border-bottom: 1.25em double white;
+        transition: all 0.5s ease;
+    }
+    .menu-principal #menumovil:hover:before {
+        content: "";
+        border-top: 0.4em solid #ff6854;
+        border-bottom: 1.25em double #ff6854;
+    }
+    .bloque-bienvenidos figure {
+        display: block;
+        text-align: left;
+        padding: 0.4em 1.6em;
+        overflow: hidden;
+        /*10-16, 30-16*/
+        border-bottom: 0.3125em solid #ee5624;
+    }
+    .bloque-bienvenidos figure:first-child {
+        border-top: 0.3125em solid #ee5624;
+    }
+    .bloque-bienvenidos figure:last-child {
+        border-bottom: none;
+    }
+    .bloque-bienvenidos figure img {
+        max-width: 30%;
+        float: left;
+        margin-right: 2%;
+    }
+    .bloque-bienvenidos figure h3 {
+        text-align: left;
+    }
+}
+
+/*fin de mediaquerie*/
+
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 550px
+__________________________________________________*/
+
+@media screen and (max-width:550px) {
+    .barra-encabezado .telefono {
+        display: block;
+        cursor: pointer;
+        background: #ee5624;
+        padding: 0.5em;
+        margin: 0 auto;
+        width: 95%;
+        color: white;
+        border-radius: 0.5em;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        font-size: 1.5em;
+    }
+    .barra-encabezado .telefono:hover {
+        background: #000;
+        color: #ee5624;
+    }
+    .barra-encabezado form {
+        display: block;
+        margin: 1em 0;
+    }
+    .barra-encabezado form input {
+        width: 95%;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        font-size: 1.5em;
+    }
+    .barra-encabezado .redes-sociales {
+        display: block;
+        font-size: 1.5em;
+    }
+    .texto-presentacion {
+        margin-top: -0.5em;
+    }
+    main article.quienes-somos h2 {
+        text-align: center;
+    }
+    main article.donde-estamos h2 {
+        text-align: center;
+    }
+    main article.quienes-somos img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    main article.quienes-somos p {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1em;
+        text-align: center;
+    }
+     .presentacion {
+    background: url(../images/fondo-presentacion-peque.jpg) no-repeat center top;
+    background-size: cover;
+}
+}
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 420px
+__________________________________________________*/
+
+@media screen and (max-width:420px) {
+    .texto-presentacion {
+        font-size: 70%;
+    }
+    .texto-presentacion h2 {
+        display: none;
+    }
+}
+
+/*__________________________________________________
+    MEDIA QUERIE A LOS 1440px
+__________________________________________________*/
+
+@media screen and (min-width:1440px) {
+    body {
+        font-size: 120%;
+    }
+    .texto-presentacion {
+        margin-top: -1.5625em;
+        /*30-19.2*/
+    }
+}
+@media screen and (min-width:1900px) {
+    body {
+        font-size: 140%;
+    }
+}
+@media screen and (min-width:2100px) {
+    body {
+        font-size: 150%;
+    }
+    .texto-presentacion {
+        margin-top: -3em;
+    }
+    .contenedor {
+        max-width: 83.33333333333333em;
+        /*2000-24*/
+    }
+}
+
